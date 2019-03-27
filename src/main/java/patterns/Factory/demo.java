@@ -21,8 +21,5 @@ public class demo {
         hamburger = jamaicanBurgerStore.orderHamburger("veggie");
         System.out.println("James Bond ordered: " + hamburger.getName() + "\n");
 
-
-
-
     }
 }
