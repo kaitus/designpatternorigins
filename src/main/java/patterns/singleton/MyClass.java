@@ -4,15 +4,16 @@ public class MyClass {
 
     String name;
 
-    private static MyClass uniqueInstance;
+    //Eagerly creating singlet class
+    private static MyClass uniqueInstance = new MyClass();
 
     private MyClass() {
     }
 
-    public static synchronized MyClass getInstance() {
-        if (uniqueInstance == null) {
-            uniqueInstance = new MyClass();
-        }
+    public static MyClass getInstance() {
+ //       if (uniqueInstance == null) {
+ //           uniqueInstance = new MyClass();
+ //       }
         return uniqueInstance;
     }
 }
