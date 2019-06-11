@@ -9,7 +9,7 @@ public class Main {
         System.out.println("Iterator design pattern");
 
         Catalog devStoreCatalog = new DevStoreCatalog();
-        Catalog geekyStoreCatalog = new DevStoreCatalog();
+        Catalog geekyStoreCatalog = new GeekyStoreCatalog();
 
         Seller seller = new Seller(geekyStoreCatalog, devStoreCatalog);
         seller.printCatalog();

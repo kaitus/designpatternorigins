@@ -1,10 +1,11 @@
 package patterns.iterator.example1;
 
+import patterns.iterator.example1.Interfaces.Catalog;
 import patterns.iterator.example1.Interfaces.GeekyStoreIterator;
 
 import java.util.ArrayList;
 
-public class GeekyStoreCatalog {
+public class GeekyStoreCatalog implements Catalog {
     private ArrayList<Product> catalog;
 
     public GeekyStoreCatalog() {
